@@ -96,7 +96,7 @@ function jma_tsunamiget(url) {
   //元ファイルは気象庁のページからダウンロードできます（http://www.data.jma.go.jp/developer/gis.html）
   $.when(
     $.getJSON("//www.jma.go.jp/bosai/tsunami/data/" + url + "?" + new Date().getTime()),
-    $.getJSON("//tile.hachi508.com/map_json/japan_tsunami.json")
+    $.getJSON("japan_tsunami.json")
   ).done(function (tdata, mdata) {
     let fill_data = [];
 
