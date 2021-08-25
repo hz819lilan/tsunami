@@ -25,7 +25,7 @@ $(window).on("load", function () {
   map.createPane("line_pane").style.zIndex = 100;
   map.createPane("eppane").style.zIndex = 150;
 
-  L.tileLayer("//cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
+  L.tileLayer("//cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png", {
     attribution: "地図データ：<a href='//www.gsi.go.jp/'>国土地理院</a>",
     maxZoom: 13,
     minZoom: 2,
