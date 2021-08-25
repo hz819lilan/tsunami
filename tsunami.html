@@ -1,0 +1,15 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="//unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+    <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="tsunami.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <select id="tsunami_selecter" onchange="jma_tsunamiget(this.value)"></select>
+    <script type="text/javascript" src="tsunami.js"></script>
+  </body>
+</html>
