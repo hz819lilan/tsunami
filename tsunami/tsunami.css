@@ -1,0 +1,16 @@
+#map {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #tsunami_selecter {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        z-index: 500;
+      }
