@@ -1,3 +1,5 @@
+/*このコードは@Hachi_713さんが作成されたもの(https://codepen.io/hachi_713/pen/zYNKyre)に変更を加えたものです。*/
+
 let map;
 let epicenter_icon;
 const GRADE_COLOR = {
@@ -31,13 +33,6 @@ $(window).on("load", function () {
     minZoom: 2,
     pane: "base",
   }).addTo(map);
-
-
-// GeoJsonファイルの読み込み
-//$.getJSON('area.json', function(data) {
-//    var geoJson = L.geoJson(data);
-//    }).addTo(map);
-
 
   map.attributionControl.addAttribution("津波情報：<a href='https://www.jma.go.jp/'>気象庁</a>");
 
