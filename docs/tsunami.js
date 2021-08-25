@@ -32,6 +32,13 @@ $(window).on("load", function () {
     pane: "base",
   }).addTo(map);
 
+
+// GeoJsonファイルの読み込み
+$.getJSON('area.json', function(data) {
+    var geoJson = L.geoJson(data);
+    }).addTo(map);
+
+
   map.attributionControl.addAttribution("津波情報：<a href='https://www.jma.go.jp/'>気象庁</a>");
 
   //震源地アイコンの設定
