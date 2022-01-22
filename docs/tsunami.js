@@ -38,7 +38,7 @@ $(window).on("load", function () {
 
   //震源地アイコンの設定
   epicenter_icon = L.icon({
-    iconUrl: "https://hachi-tool0.exp.jp/quake/image/epicenter.png",
+    iconUrl: "shingen.png",
     iconSize: [22, 22],
     iconAnchor: [12, 12],
   });
