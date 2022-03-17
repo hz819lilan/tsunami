@@ -6,11 +6,11 @@ const GRADE_COLOR = {
   "大津波警報：発表": { color: "#AA00AA", width: 11 },
   "大津波警報": { color: "#AA00AA", width: 11 },
   "津波警報": { color: "#FF2800", width: 10 },
-  "津波注意報": { color: "#AA00AA", width: 8 },
-  "津波予報（若干の海面変動）": { color: "#FF2800", width: 7 },
+  "津波注意報": { color: "#F2E700", width: 8 },
+  "津波予報（若干の海面変動）": { color: "#3CFFFF", width: 7 },
   "警報解除": { color: "#2200B3", width: 7 },
   "津波注意報解除": { color: "#2200B3", width: 7 },
-  "津波なし": { color: "#F2E700", width: 7 },
+  "津波なし": { color: "#656565", width: 7 },
 };
 
 $(window).on("load", function () {
@@ -132,7 +132,7 @@ function jma_tsunamiget(url) {
       },
       style: function (feature) {
         //fill_dataを参照し、地図コードが一致する場合はグレードから色と線の太さを参照する
-        let fill_color = "#F2E700";
+        let fill_color = "#656565";
         let line_width = 7;
         let mapcode = feature.properties.code;
         let code_index = fill_data.findIndex(({ code }) => code === mapcode);
