@@ -132,7 +132,7 @@ function jma_tsunamiget(url) {
       },
       style: function (feature) {
         //fill_dataを参照し、地図コードが一致する場合はグレードから色と線の太さを参照する
-        let fill_color = "#F2E700";
+        let fill_color = "#F2E700 ";
         let line_width = 7;
         let mapcode = feature.properties.code;
         let code_index = fill_data.findIndex(({ code }) => code === mapcode);
