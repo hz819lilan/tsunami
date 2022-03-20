@@ -10,7 +10,7 @@ const GRADE_COLOR = {
   "津波予報（若干の海面変動）": { color: "#FF2800", width: 7 },
   "警報解除": { color: "#2200B3", width: 7 },
   "津波注意報解除": { color: "#2200B3", width: 7 },
-  "津波なし": { color: "#656565", width: 7 },
+  "津波なし": { color: "#F2E700", width: 7 },
 };
 
 $(window).on("load", function () {
